@@ -25,7 +25,7 @@
 }
 
 .floatTOC > * {
-	transition: 1s all ease;
+	transition: 0.2s all ease;
 	opacity: 0.5;
 }
 
