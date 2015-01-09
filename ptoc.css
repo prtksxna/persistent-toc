@@ -31,3 +31,7 @@
 .floatTOC:hover > * {
 	opacity: 1;
 }
+
+.floatTOC .tocnumber {
+	display: none;
+}
