@@ -1,5 +1,5 @@
 .floatTOC {
-	transition: 1s all ease;
+	transition: 0.2s all ease;
 	display: block;
 	position: fixed;
 	top: 0;
@@ -7,7 +7,7 @@
 	border: none;
 	background: #f6f6f6;
 	font-size: 0.8em;
-	width: 10em;
+	max-width: 10em;
 	padding: 1.2em;
 	height: 100%;
 	white-space: nowrap;
@@ -19,7 +19,7 @@
 }
 
 .floatTOC:hover {
-	width: auto;
+	max-width: 1000em;
 	overflow: auto;
 	box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
