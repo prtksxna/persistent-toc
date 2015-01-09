@@ -1,0 +1,34 @@
+.floatTOC {
+	transition: 1s all ease;
+	display: block;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	border: none !important;
+	background: #f6f6f6 !important;
+	font-size: 0.8em !important;
+	min-width: 162px;
+	width: 162px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.floatTOC ul ul {
+	margin: 0 0 0 1em
+}
+
+.floatTOC:hover {
+	width: auto;
+	overflow: auto;
+	box-shadow: 0 0 30px rgba( 0,0,0, 0.5) ;
+}
+
+.floatTOC > * {
+	transition: 1s all ease;
+	opacity: 0.5;
+}
+
+.floatTOC:hover > * {
+	transition: 1s all ease;
+	opacity: 1;
+}
