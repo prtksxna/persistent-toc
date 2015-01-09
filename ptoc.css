@@ -39,3 +39,7 @@
 .floatTOC a {
 	color: #000;
 }
+
+.floatTOC .toctoggle {
+	display: none;
+}
