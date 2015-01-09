@@ -35,3 +35,7 @@
 .floatTOC .tocnumber {
 	display: none;
 }
+
+.floatTOC a {
+	color: #000;
+}
