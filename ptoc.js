@@ -15,7 +15,11 @@ mw.loader.using( 'jquery.throttle-debounce', function () {
 			.removeAttr( 'id' )
 			.addClass( 'floatTOC' )
 			.appendTo( 'body' )
-			.css( 'opacity', 0 );
+			.css( {
+				visibility: 'hidden',
+				opacity: 0
+			} );
+
 
 		tocLimit = $toc.offset().top + $toc.height();
 		headingOffsets = [];
@@ -31,7 +35,10 @@ mw.loader.using( 'jquery.throttle-debounce', function () {
 			scrollTop = $window.scrollTop();
 
 			if ( scrollTop > tocLimit ) {
-				$floatTOC.css( 'opacity', 1 );
+				$floatTOC.css( {
+					visibility: 'visible',
+					opacity: 1
+				} );
 				$mwPanel.hide();
 
 				// Highlight current
@@ -52,7 +59,10 @@ mw.loader.using( 'jquery.throttle-debounce', function () {
 				}
 
 			} else {
-				$floatTOC.css( 'opacity', 0 );
+				$floatTOC.css( {
+					visibility: 'hidden',
+					opacity: 0
+				} );
 				$mwPanel.show();
 			}
 		}
