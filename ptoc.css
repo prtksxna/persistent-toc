@@ -44,3 +44,7 @@
 .floatTOC .toctoggle {
 	display: none;
 }
+
+.floatTOC #toctitle {
+	text-align: left;
+}
