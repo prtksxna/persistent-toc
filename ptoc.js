@@ -1,7 +1,7 @@
 mw.loader.using( 'jquery.throttle-debounce', function () {
 	$( function () {
 		var $window, $mwPanel, $floatTOC, scrollHandler,
-			tocLimit, headingOffsets,
+			tocLimit, headingOffsets, headingThreshold,
 			$toc = $( '#toc' );
 
 		if ( !$toc.length ) {
@@ -10,6 +10,7 @@ mw.loader.using( 'jquery.throttle-debounce', function () {
 
 		$window = $( window );
 		$mwPanel = $( '#mw-panel' );
+		headingThreshold = $window.height() / 5.0;
 		$floatTOC = $toc
 			.clone()
 			.removeAttr( 'id' )
@@ -46,7 +47,7 @@ mw.loader.using( 'jquery.throttle-debounce', function () {
 				// Current section is above the first heading below the top of the screen
 				$.each( headingOffsets, function ( i, v ) {
 					// Skip first as there's no previous heading before the first
-					if ( i !== 0 && scrollTop < v[ 1 ] ) {
+					if ( i !== 0 && ( scrollTop + headingThreshold ) < v[ 1 ] ) {
 						highlight = headingOffsets[ i - 1 ][ 0 ];
 						return false;
 					}
