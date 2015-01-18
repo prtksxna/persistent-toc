@@ -21,6 +21,14 @@ mw.loader.using( 'jquery.throttle-debounce', function () {
 				opacity: 0
 			} );
 
+		// Hijack links so that we can scroll to the content
+		$floatTOC.find( 'a' ).click( function ( e ) {
+			$( 'html, body' ).animate( {
+				scrollTop: $( $( this ).attr( 'href' ) ).offset().top - headingThreshold
+			} );
+			return false;
+		} );
+
 
 		tocLimit = $toc.offset().top + $toc.height();
 		headingOffsets = [];
