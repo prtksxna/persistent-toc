@@ -21,6 +21,9 @@ mw.loader.using( 'jquery.throttle-debounce', function () {
 				opacity: 0
 			} );
 
+		// Show the ToC ul even if its hidden
+		$floatTOC.find( 'ul' ).show();
+
 		// Hijack links so that we can scroll to the content
 		$floatTOC.find( 'a' ).click( function ( e ) {
 			$( 'html, body' ).animate( {
