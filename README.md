@@ -1,6 +1,6 @@
 # Persistent Table of Contents for Wikipedia
 
-A gadget to add persistent table of contents on Wikipeida articles. The table of contents move to the left sidebar after scrolling past the first section and they expand on hover.
+A gadget to add persistent table of contents on Wikipedia articles. The table of contents move to the left sidebar after scrolling past the first section and they expand on hover.
 
 Please [report problems](https://github.com/prtksxna/persistent-toc/issues/new) on the [issue tracker](https://github.com/prtksxna/persistent-toc/issues/).
 
