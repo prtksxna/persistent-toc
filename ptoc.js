@@ -27,7 +27,7 @@ mw.loader.using( 'jquery.throttle-debounce', function () {
 		// Hijack links so that we can scroll to the content
 		$floatTOC.find( 'a' ).click( function ( e ) {
 			$( 'html, body' ).animate( {
-				scrollTop: $( $( this ).attr( 'href' ) ).offset().top - headingThreshold
+				scrollTop: $( this.hash.replace( /\./g, '\\.' ) ).offset().top - headingThreshold
 			} );
 			return false;
 		} );
