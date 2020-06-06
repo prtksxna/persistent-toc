@@ -2,7 +2,7 @@
 	transition: 0.2s all ease;
 	display: block;
 	position: fixed;
-	top: 0;
+	top: 20px;
 	left: 0;
 	border: none;
 	background: #f6f6f6;
