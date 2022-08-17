@@ -23,6 +23,9 @@ mw.loader.using( 'jquery.throttle-debounce', function () {
 
 		// Show the ToC ul even if its hidden
 		$floatTOC.find( 'ul' ).show();
+		
+		// Put !important to the checkbox
+		$floatTOC.find( 'input.toctogglecheckbox' ).css("display", "none !important");
 
 		// Hijack links so that we can scroll to the content
 		$floatTOC.find( 'a' ).click( function ( e ) {
